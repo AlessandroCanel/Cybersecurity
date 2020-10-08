@@ -1,4 +1,4 @@
-with open('Lesson4es3.txt', 'r') as file:
+with open('InputCesarCypher.txt.txt', 'r') as file:
     phase = file.read().replace('\n', '')
 
 result = ''
