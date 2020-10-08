@@ -7,7 +7,7 @@ def binary(one):
     return two
 
 
-with open('challenge.txt', 'r') as file:
+with open('Lesson3es3.txt', 'r') as file:
     phrase = file.read().replace('\n', '')
 
 result = re.sub('[^A-Z]', '', phrase)
