@@ -1,11 +1,13 @@
-with open('InputCesarCypher.txt.txt', 'r') as file:
-    phase = file.read().replace('\n', '')
+def ces():
+    with open('InputCesarCypher.txt', 'r') as file:
+        phase = file.read().replace('\n', '')
 
-result = ''
+    result = ''
 
-y = int(input("say how much you want to shift "))
+    y = int(input("say how much you want to shift "))
 
-for x in phase:
-    result = result + chr(ord(x) + y)
-# Programma muove i caratteri
-print(result, file=open("output.txt", "a"))
+    for x in phase:
+        if x != " ":
+            result = result + chr(ord(x) + y)
+    # This program moves the words ou or down the alphabet
+    print(result, file=open("output.txt", "a"))
