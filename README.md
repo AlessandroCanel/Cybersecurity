@@ -1,3 +1,2 @@
-# FindingCapital
-This program allows you to input a txt file and find ALL the capital letters, in this case the secret message was all capital and the other one alows you to resolve the Cesar Cypher
-Please open the main and just follow instructions :)
+# Cybersec Exercises
+Exercises for simple python programs for the cybersecurity lab, not really noteworthy, by executing the main you'll be able to access all of the other programs, with accurate description, all rights are reserved and all the instruction are on the main /help/
