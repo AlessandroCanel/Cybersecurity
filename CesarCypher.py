@@ -8,6 +8,14 @@ def ces():
 
     for x in phase:
         if x != " ":
-            result = result + chr(ord(x) + y)
+            # deve essere tra 65 e 90
+            if (ord(x) + y) > 90:
+                result = result + chr(ord(x) + y - 26)
+            elif (ord(x) + y) < 65:
+                result = result + chr(ord(x) + y + 26)
+            else:
+                result = result + chr(ord(x) + y)
+        else:
+            result = result + ' '
     # This program moves the words ou or down the alphabet
     print(result, file=open("output.txt", "a"))
